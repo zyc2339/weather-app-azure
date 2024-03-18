@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     //fetch the data from API endpoint
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=650ad8fb3c6e4ecab3190253232706&q=${currentCity}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=650ad8fb3c6e4ecab3190253232706&q=${currentCity}&aqi=no`
     )
       .then((res) => res.json())
       .then((result) => {
