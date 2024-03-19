@@ -15,8 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - name: Create .env file
-        run: echo "${{ secrets.ENV_FILE }}" > .env
+      - name: set up env 
+        env:
+          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
       - uses: actions/checkout@v3
         with:
           submodules: true
