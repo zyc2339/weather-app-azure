@@ -16,14 +16,12 @@ jobs:
     name: Build and Deploy Job
     
     steps:
-      - name: Create .env 
-        run: echo "My sercret is ${{ secrets.VITE_API_KEY }}"
-        env:
-          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
       - uses: actions/checkout@v3
         with:
           submodules: true
           lfs: false
+      - name: Create .env file
+        run: echo "${{ secrets.ENV_FILE }}" > .env
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
