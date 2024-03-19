@@ -1,8 +1,5 @@
-# React + Vite
+# Weather App React + Vite ==> Azure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Visit site here ](https://jolly-bush-09eb13f00.5.azurestaticapps.net/) 
+- [Weatherapi ](https://www.weatherapi.com/) 
+- [Documentation Followed](https://vitejs.dev/guide/static-deploy.html#azure-static-web-apps) 
